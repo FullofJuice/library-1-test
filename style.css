@@ -321,12 +321,15 @@ h1 {
 
 /*   favorites -----------------  favorites */
 
-.coffeeShop {
+.table {
     display: flex;
     flex-direction: column;
-}
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 1440px;
+  }
 
-.coffeeShop h2 {
+  .table h2 {
     color: #0C0C0E;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -334,7 +337,7 @@ h1 {
     margin: 20px auto 0px;
 }
 
-.coffeeShop p {
+.table p {
     color: #000;
     letter-spacing: 2px;
     font: normal 400 20px/2em Inter;
@@ -342,77 +345,113 @@ h1 {
     text-align: center;
 }
 
-.offer {
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.offer h3 {
-    color: #BB945F;
-    letter-spacing: 2px;
-    font: normal 400 40px/1em Forum;
-}
-
-.offer div:nth-child(2) h3 {
-    text-align: right;
-}
-
-.offer div {
-    width: 438px;
-    height: 520px;
-    display: flex;
-    flex-direction: column;
-}
-
-.offer tr {
+.table1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
 }
-
-.offer td {
-    color: #000000;
+  
+  .table-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .table-right tbody {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  th {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
     letter-spacing: 2px;
-    font: normal 400 20px/2em Inter;
-}
-
-.right-table tr td:nth-child(2) {
-    align-self: center;
-    border-bottom: 1px solid #BB945F;
+    text-transform: capitalize;
+  }
+  
+  .table-left td:nth-of-type(1) {
+    width: 196px;
+  }
+  
+  .table-left tr:nth-of-type(2) td:nth-of-type(1) {
+    width: 199px;
+    box-sizing: content-box;
+  }
+  
+  .table-left td:nth-of-type(2) {
     width: 100px;
-    height: 1px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.left-table tr td:nth-child(2) {
-    align-self: center;
     border-bottom: 1px solid #BB945F;
+    align-self: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .table-left td {
+    color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  }
+  
+  .table-left tr:not(:first-of-type) {
+    margin-top: 37.7px;
+  }
+  
+  /* right table ---- */
+  
+  
+  .table-right{
+    display: flex;
+    width: 482px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .table-right td {
+    color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  }
+  
+  .table-right td:nth-of-type(2) {
     width: 100px;
-    height: 1px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.right-table tr {
+    border-bottom: 1px solid #BB945F;
+    align-self: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .table-right tr:first-of-type {
+    align-self: flex-end;
+  }
+  
+  .table-right tr:not(:first-of-type) {
+    margin-top: 37.7px;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-}
+  }
+  
+  .table td:nth-of-type(3) {
+    font-family: Forum;
+  }
 
-#move-right1 {
-    margin-right: -45px;
-}
-
-#move-right2 {
-    margin-right: -10px;
-}
-
-#move-right3 {
-    margin-right: -55px;
-}
-
-#move-right4 {
-    margin-right: -45px;
-}
 /*  coffee shop remake ---------------     */
