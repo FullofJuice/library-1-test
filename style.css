@@ -7,9 +7,8 @@
     font-weight: normal;
     box-sizing: border-box;
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
-
 
 .container {
     max-width: 1440px;
@@ -532,6 +531,10 @@ footer a {
     color: #FFF;
 }
 
+#footer-white * {
+    color: #FFF;    
+}
+
 footer div:first-child {
     display: flex;
     justify-content: space-between;
@@ -549,7 +552,6 @@ footer .footer-links {
 }
 
 footer .social-media {
-    /* align-self: flex-start; */
     width: 102px;
     height: 24px;
     margin-top: 14px;
@@ -562,9 +564,6 @@ footer .social-media {
 footer .social-media ul{
     display: flex;
     flex-direction: row;
-    /* margin-top: 9px; */
-    /* flex-wrap: wrap;
-    justify-content: space-evenly; */
 }
 
 .social-media li{
