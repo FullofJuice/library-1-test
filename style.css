@@ -82,6 +82,8 @@ button {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 2s;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 header {
@@ -90,14 +92,13 @@ header {
     background: #0C0C0E;
     display: flex;
     justify-content: space-between;
-
 }
 
 h1 {
     color: #FFF;
     font: normal 400 30px/50px Forum, serif;
     letter-spacing: 0.6px;
-    margin: 20px;
+    margin: 21px;
 }
 
 
@@ -107,7 +108,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    margin: 20px 0px;
+    margin: 22px 2px;
 }
 
 .nav-header ul {
@@ -152,13 +153,17 @@ h1 {
 }
 
 .header-icon {
-    margin: auto 20px auto 25px;
+    margin: 10px 18px auto 27px;
     width: 28px;
     height: 28px;
 }
 
 .nav-header li:nth-of-type(1) {
-    margin-left: 0px;
+    margin-right: 17px;
+}
+
+.nav-header li:last-of-type {
+    margin-right: 14px;
 }
 
 /* top ----------------------    top */
@@ -182,13 +187,18 @@ h1 {
 }
 
 .welcome-section h2 {
+    margin-right: 1px;
     width: 520px;
-    flex-shrink: 0;
     color: #FFF;
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     font: normal 400 40px/50px Forum, sans-serif;
+}
+
+.welcome-section h2 span {
+    margin-right: 7px;
+    margin-top: 2px;
 }
 
 
@@ -223,7 +233,7 @@ h1 {
     color: #000;
     text-align: center;
     font: normal 400 20px/2em Inter, sans-serif;
-    margin: 20px 0;
+    margin: 21px 0;
     height: 40px;
 }
 
@@ -247,7 +257,7 @@ h1 {
     justify-content: space-between;
     /* width: 68px;
     height: 16px; */
-    margin: 30px auto 35px;
+    margin: 32px auto 35px;
 }
 
 .btn-box {
@@ -281,7 +291,7 @@ h1 {
     letter-spacing: 2px;
     text-transform: capitalize;
     font: normal 400 40px/1em Forum;
-    margin: 20px auto 0px;
+    margin: 19px auto 0px;
 }
 
 .favorites > p {
@@ -289,15 +299,29 @@ h1 {
     text-align: center;
     font: normal 700 20px/normal Inter;
     margin: 20px;
+    margin-bottom: 21px;
     align-self: flex-start;
 }
 
+.seasons-radio {
+    margin-top: 21px;
+    margin-bottom: 20px;
+}
+
 .favorites input {
-    margin: auto 15px auto 20px;
+    margin: auto 14px auto 16px;
+    width: 17px;
+    height: 17px;
+}
+
+.favorites input:nth-child(1) {
+    margin-right: 16px;
+    margin-left: 20px;
 }
 
 .favorites label {
-    margin-right: 70px;
+    margin-left: 3px;
+    margin-right: 69px;
     color: #000;
     font: normal 400 20px Inter;
 }
@@ -309,10 +333,11 @@ h1 {
 }
 
 .staff-pick section {
-    width: 550px;
+    width: 551px;
     height: 555px;
     position: relative;
-    padding: 15px;
+    padding: 14px;
+    padding-left: 19px;
     border: 1px solid #000;
 }
 
@@ -320,9 +345,14 @@ h1 {
     margin-right: 260px;
 }
 
+.staff-pick section:nth-child(even) {
+    /* Добавил немного марджина из-за пиксель перф */
+    margin-right: 10px;
+}
+
 .staff-pick section:nth-child(n+3) {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .staff-pick h3 {
@@ -359,7 +389,7 @@ h1 {
 }
 
 .staff-pick p:nth-of-type(2) {
-    width: 355px;
+    width: 356px;
     color: #000;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -376,8 +406,8 @@ h1 {
     width: 75px;
     height: 30px;
     position: absolute;
-    bottom: 17px;
-    left: 21px;
+    bottom: 15px;
+    left: 20px;
 }  
 
 
@@ -387,8 +417,10 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 10px;
+    padding: 0px 11px;
+    padding-bottom: 15px;
     width: 1440px;
+    height: 841px;
   }
 
   .table h2 {
@@ -399,11 +431,17 @@ h1 {
     margin: 20px auto 0px;
 }
 
+#table-line {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 .table p {
     color: #000;
     letter-spacing: 2px;
     font: normal 400 20px/2em Inter;
     margin: 20px;
+    margin-left: 19px;
     text-align: center;
 }
 
@@ -411,8 +449,15 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 7px;
+    margin-bottom: 25px;
 }
-  
+
+.table1 tr:nth-child(3) {
+    margin-bottom: 5px;
+} 
+
   .table-left{
     display: flex;
     flex-direction: column;
@@ -459,17 +504,22 @@ h1 {
   
   .table-left td {
     color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; 
-  letter-spacing: 2px;
-  text-transform: capitalize;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
   }
   
   .table-left tr:not(:first-of-type) {
-    margin-top: 37.7px;
+    margin-top: 40px;
+  }
+
+  .table-right tr:not(:first-of-type) {
+    margin-bottom: 2px;
+    margin-right: -2px;
   }
   
   /* right table ---- */
@@ -484,13 +534,13 @@ h1 {
   
   .table-right td {
     color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; 
-  letter-spacing: 2px;
-  text-transform: capitalize;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
   }
   
   .table-right td:nth-of-type(2) {
@@ -646,7 +696,7 @@ footer .social-media ul{
     width: 1400px;
     border-top: 1px solid #FFF;
     background-color: #FFF;
-    margin: 30px auto 45px;
+    margin: 28px auto 45px;
 }
 
 .footer-bottom {
@@ -681,6 +731,10 @@ footer .social-media ul{
     letter-spacing: 2px;
 }
 
+.footer-bottom div:nth-child(2) {
+    margin-left: 150px;
+}
+
 .footer-bottom div:last-child {
     text-align: center;
     font-family: Inter;
@@ -709,6 +763,7 @@ footer li:hover,
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top: -3px;
 }
 
 .librarycard h2 {
@@ -733,6 +788,7 @@ footer li:hover,
 }
 
 .find-get-cards {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -816,7 +872,7 @@ footer li:hover,
 .card-form button {
     font-size: 20px;
     letter-spacing: 1px;
-    margin: 20px 0px 0px 160px;
+    margin: 17px 0px 0px 156px;
     padding: 10px 40px;
 }
 
@@ -826,7 +882,7 @@ footer li:hover,
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .get-card h2 {
@@ -838,6 +894,7 @@ footer li:hover,
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.6px;
+    text-transform: none;
 }
 
 .get-card div:first-of-type {
@@ -863,7 +920,7 @@ footer li:hover,
 .get-card-buttons button{
     width: 75px;
     height: 30px;
-    /* padding: 10px 0px; */
-    margin-left: 20px;
+    margin-left: 16px;
+    margin-top: -1px;
 }
 
