@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library 1</title>
+    <!-- <link rel="icon" type="image/svg" sizes="32x32" href="assets/favicon/favicon-32x32.svg">
+    <link rel="icon" type="image/svg" sizes="16x16" href="assets/favicon/favicon-16x16.svg"> -->
+    <link rel="icon" type="image/icon" sizes="48x48" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,11 +18,11 @@
             <div class="header-right">
                 <nav class="nav-header">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Favorites</a></li>
-                        <li><a href="#">Coffee shop</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Library Card</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#favorites" class="nav-link">Favorites</a></li>
+                        <li><a href="#coffee-shop" class="nav-link">Coffee shop</a></li>
+                        <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li><a href="#librarycard" class="nav-link">Library Card</a></li>
                     </ul>
                 </nav>
                 <div class="header-icon">
@@ -32,7 +37,7 @@
                 <h2>Welcome<br> to the Brooklyn Library</h2>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <h2>About</h2>
                 <div class="line"></div>
                 <p class="pre-img">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
@@ -57,7 +62,7 @@
                     </div>
                 </div>
             </section>
-            <section class="favorites">
+            <section class="favorites" id="favorites">
                 <h2>Favorites</h2>
                 <div class="line"></div>
                 <p>Pick favorites of season</p>
@@ -88,7 +93,7 @@
                         <p>The Book Eaters 
                             <br><span>By Sunyi Dean</span></p>
                         <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
-                        <button>Buy</button>
+                        <button type="button">Buy</button>
                         <div class="staff-pick__img"><img src="assets/svg/book1.svg" alt="book"></div>
                     </section>
                     <section>
@@ -99,7 +104,7 @@
                         <p>Cackle 
                             <br><span>By Rachel Harrison</span></p>
                         <p>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
-                        <button>Buy</button>
+                        <button type="button">Buy</button>
                         <div class="staff-pick__img"><img src="assets/svg/book2.svg" alt="book"></div>
                     </section>
                     <section>
@@ -110,7 +115,7 @@
                         <p>Dante: Poet of the Secular World 
                             <br><span>By Erich Auerbach</span></p>
                         <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.
-                            <button>Buy</button>
+                            <button type="button">Buy</button>
                         <div class="staff-pick__img"><img src="assets/svg/book3.svg" alt="book"></div>
                     </section>
                     <section>
@@ -121,12 +126,12 @@
                         <p>The Last Queen
                             <br><span>By Clive Irving</span></p>
                         <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
-                            <button>Own</button>
+                            <button type="button">Own</button>
                         <div class="staff-pick__img"><img src="assets/svg/book4.svg" alt="book"></div>
                     </section>
                 </div>
             </section>
-            <section class="table">
+            <section class="table" id="coffee-shop">
                 <h2>Coffee shop</h2>
                 <div class="line"></div>
                 <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
@@ -134,7 +139,7 @@
                 <div class="table1">
                     <table class="table-left">
                         <tr>
-                          <th>Coffee & Tea</th>
+                          <th colspan="3">Coffee & Tea</th>
                         </tr>
                         <tr>
                           <td>Cold Brew Coffee</td>
@@ -169,7 +174,7 @@
                       </table>
                       <table class="table-right">
                         <tr>
-                          <th>Desserts & Cakes</th>
+                          <th colspan="3">Desserts & Cakes</th>
                         </tr>
                         <tr>
                           <td>Forest Gateau</td>
@@ -204,7 +209,7 @@
                       </table>
                 </div>
               </section>
-              <section class="our-contacts">
+              <section class="our-contacts" id="contacts">
                 <h2>Our Contacts</h2>
                 <div class="line"></div>
                 <div class="contacts">
@@ -221,7 +226,7 @@
                     </div>
                 </div>
             </section>
-            <section class="librarycard">
+            <section class="librarycard" id="librarycard">
                 <h2>Digital Library Cards</h2>
                 <div class="line"></div>
                 <div class="find-get-cards">
@@ -234,7 +239,7 @@
                                 <div><input type="text" placeholder="Reader's name"></div>
                                 <div><input type="text" placeholder="Card number"></div>
                             </div>
-                            <button>Check the card</button>
+                            <button type="button">Check the card</button>
                         </form>
                     </div>
                     </div>
@@ -254,15 +259,16 @@
                     </div>
                 </div>
             </section>
+        </main>
             <footer>
                 <div>
                     <div class="footer-links">
                         <div><a href="">286 Cadman Plaza, New York,<br> NY 11238, United States</a></div>
                         <div class="social-media">
                             <ul>
-                            <li><a href=""><img src="assets/svg/u_twitter-alt.svg" alt="twitter-icon"></a></li>
-                            <li><a href=""><img src="assets/svg/u_instagram.svg" alt="instagram-icon"></a></li>
-                            <li><a href=""><img src="assets/svg/u_facebook-f.svg" alt="facebook-icon"></a></li>
+                            <li><a href="https://twitter.com/"><img src="assets/svg/u_twitter-alt.svg" alt="twitter-icon" title="Here should be X"></a></li>
+                            <li><a href="https://www.instagram.com/"><img src="assets/svg/u_instagram.svg" alt="instagram-icon"></a></li>
+                            <li><a href="https://www.facebook.com/"><img src="assets/svg/u_facebook-f.svg" alt="facebook-icon"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -274,8 +280,8 @@
                 <div class="long-line"></div>
                 <div class="footer-bottom">
                     <div>2023</div>
-                    <div><a href="">The Rolling Scopes School</a></div>
-                    <div>Oleksii Yakubenko</div>
+                    <div><a href="https://rs.school/js-stage0/">The Rolling Scopes School</a></div>
+                    <div><a href="https://github.com/FullofJuice">Oleksii Yakubenko</a></div>
                 </div>
             </footer>
     </div>

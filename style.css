@@ -8,6 +8,11 @@
     box-sizing: border-box;
     text-decoration: none;
     color: #FFF;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #b4b1b1;
 }
 
 .container {
@@ -15,6 +20,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 @font-face {
@@ -314,7 +320,9 @@ h1 {
     font: normal 700 10px/normal Inter;
     width: 75px;
     height: 30px;
-    margin: 15px 20px 15px 5px;
+    position: absolute;
+    bottom: 17px;
+    left: 21px;
 }  
 
 
@@ -474,6 +482,10 @@ h1 {
     margin-top: 40px;
 }
 
+.contacts * {
+  color: #000;
+}
+
 .contacts div:first-child {
     color: #000;
     text-align: center;
@@ -486,6 +498,10 @@ h1 {
     width: 505px;
     height: 380px;
 }
+
+/* .contacts div:first-child * {
+    color: #000;
+} */
 
 .contacts h3 {
     font-weight: 700;
@@ -673,6 +689,7 @@ footer .social-media ul{
     align-items: center;
     width: 600px;
     height: 453px;
+    margin-top: 20px;
 }
 
 .find-card  h3 {
@@ -683,7 +700,6 @@ footer .social-media ul{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.6px;
-    margin-top: 20px;
 }
 
 .card-form h2 {
@@ -749,8 +765,8 @@ footer .social-media ul{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border-radius: 2px;
-    border: 1px solid #0C0C0E;
+    /* border-radius: 2px;
+    border: 1px solid #0C0C0E; */
     letter-spacing: 1px;
     margin: 20px 0px 0px 160px;
     padding: 10px 40px;
@@ -758,12 +774,12 @@ footer .social-media ul{
 }
 
 .get-card {
-    width: 476px;
+    width: 456px;
     height: 253px;
-    padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 20px;
 }
 
 .get-card h2 {
@@ -802,8 +818,8 @@ footer .social-media ul{
     height: 30px;
     padding: 10px 0px;
     margin-left: 20px;
-    border-radius: 2px;
-    border: 1px solid #0C0C0E;
+    /* border-radius: 2px; */
+    /* border: 1px solid #0C0C0E; */
     color: #0C0C0E;
     text-align: center;
     font-family: Inter;
@@ -814,3 +830,4 @@ footer .social-media ul{
     letter-spacing: 1px;
     cursor: pointer;
 }
+
