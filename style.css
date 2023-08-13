@@ -1174,6 +1174,10 @@ footer li:hover{
 
     .our-contacts {
         margin-top: -2px;
+        /* margin-left: 1px;  Добавило полосу прокрутки, добавил марджин для contacts */
+    }
+
+    .contacts {
         margin-left: 1px;
     }
 
@@ -1316,6 +1320,10 @@ footer li:hover{
 
     .contacts img {
         width: 100%;
+    }
+
+    .contacts div:last-child {
+        width: 95%;
     }
 
     .footer-bottom div:nth-child(2) {
