@@ -28,7 +28,27 @@
                 <div class="header-icon">
                     <img src="assets/svg/icon_profile.svg" alt="">
                 </div>
+                <div class="burger hidden-burger">
+                    <img src="assets/svg/burger1.svg" alt="burger-icon">
+                </div>
             </div>
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div>
+                        <img src="assets/svg/icon_profile.svg" alt="side-icon" class="sidebar-icon">
+                    </div>
+                    <div>
+                        <img src="assets/svg/crest.svg" alt="close-crest" class="sidebar-crest">
+                    </div>
+                </div>
+                <nav class="sidebar-nav">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#favorites" class="nav-link">Favorites</a></li>
+                    <li><a href="#coffee-shop" class="nav-link">Coffee shop</a></li>
+                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li><a href="#librarycard" class="nav-link">Library Card</a></li> 
+                </nav>
+            </aside>
         </header>
     <!-- top                    top -->
         <main>
@@ -44,9 +64,11 @@
                 <div class="row-list">
                     <img class="img-hidden" src="assets/img/image4.jpg" alt="image4">
                     <div class="img-main">
+                    <img src="assets/svg/Arrow2.svg" alt="arrow-left" class="hidder-arrow">
                     <img src="assets/img/image1.jpg" alt="image1">
-                    <img src="assets/img/image2.jpg" alt="image2">
-                    <img src="assets/img/image3.jpg" alt="image3">
+                    <img src="assets/svg/Arrow1.svg" alt="arrow-right" class="hidder-arrow">
+                    <img src="assets/img/image2.jpg" alt="image2" class="hidder-768">
+                    <img src="assets/img/image3.jpg" alt="image3" class="hidder-768">
                     </div>
                     <img class="img-hidden" src="assets/img/image5.jpg" alt="image5">
                 </div>
@@ -60,14 +82,20 @@
                     <div class="btn-box">
                         <div></div>
                     </div>
+                    <div class="btn-box hidden-circle">
+                        <div></div>
+                    </div>
+                    <div class="btn-box hidden-circle">
+                        <div></div>
+                    </div>
                 </div>
             </section>
             <section class="favorites" id="favorites">
                 <h2>Favorites</h2>
                 <div class="line"></div>
                 <p>Pick favorites of season</p>
-                <div class="seasons-radio">
-                    <input type="radio" id="radio1" name="radio1" checked>
+                <form class="seasons-radio">
+                <input type="radio" id="radio1" name="radio1" checked>
                 <label for="radio1">
                     Winter
                 </label>
@@ -83,7 +111,7 @@
                 <label for="radio4">
                     Autumn
                 </label>
-                </div>
+                </form>
                 <div class="staff-pick">
                     <section>
                         <div>
@@ -135,7 +163,8 @@
                 <h2>Coffee shop</h2>
                 <div class="line" id="table-line"></div>
                 <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
-                    <br>You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery.
+                    <!-- <br>You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery. -->
+                    You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery.
                 <div class="table1">
                     <table class="table-left">
                         <tr>
